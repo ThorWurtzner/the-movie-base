@@ -1,0 +1,21 @@
+
+$desktop: 900px;
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+      @content;
+    }
+}
+
+.App {
+    min-height: 100vh;
+    background-color: rgb(37, 37, 37);
+
+    padding: 0 10%;
+    padding-bottom: 30px;
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}

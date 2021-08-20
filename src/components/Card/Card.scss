@@ -1,0 +1,51 @@
+
+a {
+    color: #fff;
+    text-decoration: none;
+    max-width: 320px;
+}
+
+.card {
+    
+    :hover {
+        cursor: pointer;
+    }
+    
+    // max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    // margin: 20px 0;
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+    border-radius: 15px;
+
+    // &:first-of-type {
+    //     margin-top: 10px;
+    // }
+
+    // &:last-of-type {
+    //     margin-bottom: 0;
+    // }
+
+    img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        border: 2px solid rgb(175, 175, 175);
+    }
+
+    div {
+        p {
+            width: 120px;
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        p:first-child {
+            font-weight: bolder;
+            color: orange;
+        }
+    }
+}
