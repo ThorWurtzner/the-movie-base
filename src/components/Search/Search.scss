@@ -104,12 +104,15 @@
     width: 60px;
     height: 60px;
     font-size: 45px;
-    border: 3px solid orange;
     background-color: transparent;
     border-radius: 50%;
     color: orange;
     margin: 0 30px;
     cursor: pointer;
+    
+    @include desktop {
+        border: 3px solid orange;
+    }
 
     &:hover {
         background-color: rgba(255, 166, 0, 0.219);
